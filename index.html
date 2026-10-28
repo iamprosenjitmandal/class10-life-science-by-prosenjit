@@ -956,6 +956,76 @@ body.dark .chapter .open:hover{background:linear-gradient(135deg,#1949b5,#2869d8
 </section>
 
 
+<section class="student-feedback wrap" id="student-feedback" aria-label="ছাত্র-ছাত্রীদের মতামত">
+  <h2 class="student-feedback-title">💬 ছাত্র-ছাত্রীদের মতামত <span>Student Feedback</span></h2>
+  <div class="student-feedback-grid">
+    <figure class="feedback-card" style="--fb:#c2410c"><blockquote>“Sir er notes gulo eto easy bhasay lekha je kothin chapter o ekhon jol er moto lage 😊 thank u sir”</blockquote><figcaption><span class="feedback-avatar" aria-hidden="true">অ</span><span><strong>অনন্যা ঘোষ</strong></span></figcaption></figure>
+    <figure class="feedback-card" style="--fb:#0f766e"><blockquote>“Proti chapter er quiz ta just osadharon 🔥 nijeke check korte pari, madhyamik er age eta khub kaje lagbe”</blockquote><figcaption><span class="feedback-avatar" aria-hidden="true">র</span><span><strong>রাহুল মণ্ডল</strong></span></figcaption></figure>
+    <figure class="feedback-card" style="--fb:#7c3aed"><blockquote>“Sir dekhlam sob ,,, I am obak ho gya.. darun hoyeche ,,,,, specially  mind map ta fatafati 👌🏻 ar onk details choto choto jamon highlight,, bastob udaharan,, bises reminder 360 rivision,,, darun laglo amar ☺️ I hope eta amk onk ta help korbe..... Thank you so much....Sir”</blockquote><figcaption><span class="feedback-avatar" aria-hidden="true">আ</span><span><strong>আশ্রুকণা সরকার</strong></span></figcaption></figure>
+    <figure class="feedback-card" style="--fb:#be123c"><blockquote>“Bongshogoti chapter ta age kichui bujhtam na 😅 ekhon puro clear.. onek dhonnobad sir 🙏”</blockquote><figcaption><span class="feedback-avatar" aria-hidden="true">অ</span><span><strong>অর্ণব বিশ্বাস</strong></span></figcaption></figure>
+    <figure class="feedback-card" style="--fb:#1d4ed8"><blockquote>“Exam er age revision er jonno etai best jayga, sob ek jaygay peye jai.. love it ❤️”</blockquote><figcaption><span class="feedback-avatar" aria-hidden="true">প</span><span><strong>পৃথা সরকার</strong></span></figcaption></figure>
+    <figure class="feedback-card" style="--fb:#15803d"><blockquote>“Video ar audio book ta darun 👍 tuition e jete jete o shune feli, khub help hocche”</blockquote><figcaption><span class="feedback-avatar" aria-hidden="true">প</span><span><strong>প্রীতম</strong></span></figcaption></figure>
+  </div>
+  <form class="feedback-form" name="student-feedback" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+    <input type="hidden" name="form-name" value="student-feedback">
+    <p hidden><label>Leave this empty: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+    <h3>✍️ তোমার মতামত জানাও</h3>
+    <div class="feedback-form-row">
+      <input name="name" type="text" placeholder="তোমার নাম" aria-label="তোমার নাম" maxlength="80" required>
+      <input name="school" type="text" placeholder="স্কুলের নাম" aria-label="স্কুলের নাম" maxlength="120" required>
+    </div>
+    <textarea name="opinion" rows="3" placeholder="এই ওয়েবসাইট সম্পর্কে তোমার মতামত লেখো..." aria-label="তোমার মতামত" maxlength="600" required></textarea>
+    <button type="submit">মতামত পাঠাও 🚀</button>
+    <p class="feedback-status" aria-live="polite"></p>
+  </form>
+</section>
+<style id="student-feedback-style">
+.student-feedback{max-width:1100px;margin:26px auto 18px;padding:24px 18px;border-radius:18px;background:#1e3a8a;color:#fff;box-shadow:0 10px 26px rgba(30,58,138,.22)}
+.student-feedback-title{margin:0 0 18px;text-align:center;font-size:clamp(21px,3vw,28px);font-weight:850;color:#fde047}
+.student-feedback-title span{display:block;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#bfdbfe;font-weight:750}
+.student-feedback-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.feedback-card{margin:0;padding:16px;border-radius:14px;background:var(--fb);color:#fff;display:flex;flex-direction:column;justify-content:space-between;gap:14px;box-shadow:0 6px 14px rgba(0,0,0,.18)}
+.feedback-card blockquote{margin:0;font-size:15px;line-height:1.7;font-weight:600}
+.feedback-card figcaption{display:flex;align-items:center;gap:10px;padding-top:11px;border-top:1px solid rgba(255,255,255,.35)}
+.feedback-avatar{flex:none;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:#fff;color:var(--fb);font-weight:900;font-size:17px}
+.feedback-card strong{display:block;font-size:15px}
+.feedback-card small{display:block;font-size:12.5px;opacity:.92}
+.feedback-form{margin:20px auto 0;max-width:720px;padding:16px;border-radius:14px;background:#fff;color:#1e293b}
+.feedback-form h3{margin:0 0 10px;color:#1e3a8a;font-size:17px}
+.feedback-form-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px}
+.feedback-form input,.feedback-form textarea{width:100%;box-sizing:border-box;padding:11px 12px;border:1.5px solid #93c5fd;border-radius:10px;font:inherit;font-size:15px;background:#fff;color:#1e293b}
+.feedback-form input:focus,.feedback-form textarea:focus{outline:none;border-color:#1d4ed8;box-shadow:0 0 0 3px rgba(29,78,216,.18)}
+.feedback-form button{margin-top:10px;width:100%;padding:12px;border:0;border-radius:10px;background:#ea580c;color:#fff;font:inherit;font-weight:850;font-size:16px;cursor:pointer}
+.feedback-form button:hover{background:#c2410c}
+.feedback-form button:disabled{opacity:.7;cursor:wait}
+.feedback-status{margin:8px 0 0;min-height:1.3em;font-weight:700;font-size:14px}
+body.dark .student-feedback{background:#172554}
+body.dark .feedback-form{background:#0f172a;color:#e2e8f0}
+body.dark .feedback-form input,body.dark .feedback-form textarea{background:#1e293b;color:#e2e8f0;border-color:#3b5b9a}
+body.dark .feedback-form h3{color:#93c5fd}
+@media(max-width:620px){.student-feedback{margin:20px 10px 14px;padding:18px 12px}.feedback-form-row{grid-template-columns:1fr}}
+</style>
+<script>
+(function(){
+  var form = document.querySelector('.feedback-form');
+  var status = form.querySelector('.feedback-status');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var empty = [].slice.call(form.querySelectorAll('[required]')).filter(function(input){ input.value = input.value.trim(); return !input.value; })[0];
+    if (empty) { status.style.color = '#b91c1c'; status.textContent = 'অনুগ্রহ করে সব ঘর পূরণ করো।'; empty.focus(); return; }
+    var button = form.querySelector('button');
+    button.disabled = true;
+    fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams(new FormData(form)).toString() })
+      .then(function(res){
+        if (!res.ok) throw new Error(res.status);
+        form.reset(); status.style.color = '#15803d'; status.textContent = 'ধন্যবাদ! তোমার মতামত পাঠানো হয়েছে। 🎉';
+      })
+      .catch(function(){ status.style.color = '#b91c1c'; status.textContent = 'পাঠানো যায়নি, আবার চেষ্টা করো।'; })
+      .then(function(){ button.disabled = false; });
+  });
+})();
+</script>
+
 <style id="compact-study-materials-note-style">
 .study-materials-note{max-width:850px;margin:20px auto 16px;padding:14px 16px;border:1px solid #b9d4c7;border-left:4px solid #6f9d87;border-radius:12px;background:linear-gradient(115deg,#edf5f0,#edf1f8);color:#33483f;font:600 12.5px/1.65 system-ui,"Noto Sans Bengali",sans-serif;box-shadow:0 5px 15px rgba(30,55,45,.07)}
 .study-materials-note-title{margin:0 0 7px;font-size:14px;line-height:1.45;font-weight:850;color:#315e50}
@@ -1164,8 +1234,20 @@ body:not(.dark) #reader,body:not(.dark) #frame{background:#f0f2f8!important}
     <div class="lock-kicker">CLASS 10 • LIFE SCIENCE</div>
     <h2 id="prosenjit-lock-title">A Magical World of Life Science, Created by Prosenjit</h2>
     <p class="lock-tagline"></p>
-    <div class="lock-access-label"><span class="lock-welcome-prefix">Welcome to</span><br>🔒 Prosenjit's Learning Platform · Enter Password to Unlock</div>
-    <form id="prosenjit-lock-form"><input id="prosenjit-lock-password" type="password" placeholder="Enter access password" autocomplete="off" aria-label="Access password" required><button type="submit">Unlock Classroom</button></form>
+    <div class="lock-access-label"><span class="lock-welcome-prefix">Welcome to</span><br>🎓 Student Login · Fill your details &amp; enter password to unlock</div>
+    <form id="prosenjit-lock-form" name="student-login" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+      <input type="hidden" name="form-name" value="student-login">
+      <p class="student-honeypot" hidden><label>Leave this empty: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+      <input class="student-field" id="student-name" name="name" type="text" placeholder="Student full name" autocomplete="name" aria-label="Student full name" maxlength="80" required>
+      <input class="student-field" id="student-contact" name="contact" type="text" placeholder="Email or mobile number" autocomplete="email" inputmode="email" aria-label="Email or mobile number" maxlength="80" required>
+      <input class="student-field" id="student-school" name="school" type="text" placeholder="School name" autocomplete="organization" aria-label="School name" maxlength="120" required>
+      <div class="student-row">
+        <input class="student-field" id="student-city" name="city" type="text" placeholder="City / Town" autocomplete="address-level2" aria-label="City or town" maxlength="60" required>
+        <select class="student-field" id="student-state" name="state" aria-label="State" required><option value="" disabled selected>Select state</option><option>Andaman and Nicobar Islands</option><option>Andhra Pradesh</option><option>Arunachal Pradesh</option><option>Assam</option><option>Bihar</option><option>Chandigarh</option><option>Chhattisgarh</option><option>Dadra and Nagar Haveli and Daman and Diu</option><option>Delhi</option><option>Goa</option><option>Gujarat</option><option>Haryana</option><option>Himachal Pradesh</option><option>Jammu and Kashmir</option><option>Jharkhand</option><option>Karnataka</option><option>Kerala</option><option>Ladakh</option><option>Lakshadweep</option><option>Madhya Pradesh</option><option>Maharashtra</option><option>Manipur</option><option>Meghalaya</option><option>Mizoram</option><option>Nagaland</option><option>Odisha</option><option>Puducherry</option><option>Punjab</option><option>Rajasthan</option><option>Sikkim</option><option>Tamil Nadu</option><option>Telangana</option><option>Tripura</option><option>Uttar Pradesh</option><option>Uttarakhand</option><option>West Bengal</option><option>Outside India</option></select>
+      </div>
+      <input id="prosenjit-lock-password" type="password" placeholder="Enter access password" autocomplete="off" aria-label="Access password" required>
+      <button type="submit">Login &amp; Unlock Classroom</button>
+    </form>
     <div class="lock-error" id="prosenjit-lock-error" aria-live="polite"></div>
     <div class="prosenjit-lock-copyright">© 2026 <strong>Prosenjit</strong> · All Rights Reserved<br><span>Prosenjit’s Learning Platform. Original educational content and design are protected by copyright. Unauthorized copying, redistribution, or commercial use is prohibited.</span></div>
   </div>
@@ -1188,10 +1270,36 @@ body:not(.dark) #reader,body:not(.dark) #frame{background:#f0f2f8!important}
     root.classList.remove('protected-view');
   } else {
     root.classList.add('protected-view');
+    var STUDENT_KEY = 'prosenjit_student_details';
+    var studentFields = ['student-name','student-contact','student-school','student-city','student-state'].map(function(id){ return document.getElementById(id); });
+    /* Pre-fill details remembered from this student's previous login on this device. */
+    try {
+      var saved = JSON.parse(localStorage.getItem(STUDENT_KEY) || 'null');
+      if (saved) studentFields.forEach(function(input){ if (saved[input.name]) input.value = saved[input.name]; });
+    } catch (storageError) {}
+    function studentError(message, input){ error.textContent = message; input.focus(); }
     form.addEventListener('submit', function(e){
       e.preventDefault();
+      error.textContent = '';
+      studentFields.forEach(function(input){ input.value = input.value.trim(); });
+      var name = studentFields[0], contact = studentFields[1], school = studentFields[2], city = studentFields[3], state = studentFields[4];
+      if (name.value.length < 2) return studentError('Please enter your full name.', name);
+      var contactValue = contact.value.replace(/[\s-]/g, '');
+      var isEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(contact.value);
+      var isMobile = /^(\+?91)?[6-9]\d{9}$/.test(contactValue);
+      if (!isEmail && !isMobile) return studentError('Please enter a valid email or 10-digit mobile number.', contact);
+      if (school.value.length < 3) return studentError('Please enter your school name.', school);
+      if (city.value.length < 2) return studentError('Please enter your city or town.', city);
+      if (!state.value) return studentError('Please select your state.', state);
+      if (!field.value) return studentError('Please enter the access password.', field);
       if(ACCESS_PASSWORDS.indexOf(field.value) !== -1){
         try { sessionStorage.setItem(SESSION_KEY, 'yes'); } catch (storageError) {}
+        try { localStorage.setItem(STUDENT_KEY, JSON.stringify({ name: name.value, contact: contact.value, school: school.value, city: city.value, state: state.value })); } catch (storageError) {}
+        /* Record the student login with Netlify Forms. The password field has no name,
+           so it is never sent. Unlocking does not wait for this request. */
+        try {
+          fetch('/', { method: 'POST', keepalive: true, headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams(new FormData(form)).toString() }).catch(function(){});
+        } catch (sendError) {}
         /* Correct password: close the password overlay and show the existing notes directly.
            Refreshing this tab will not ask for the password again. */
         lock.remove();
@@ -1316,6 +1424,16 @@ body.dark .chapter .open:hover{background:#b95c24!important}
 @media(prefers-reduced-motion:reduce){.chapter .open{transition:none!important}}
 </style>
 
+<style id="prosenjit-student-login">
+#prosenjit-access-lock #prosenjit-lock-form .student-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:11px}
+#prosenjit-access-lock #prosenjit-lock-form .student-field{width:100%!important;min-width:0!important;box-sizing:border-box!important;margin:0!important;padding:12px 14px!important;font:inherit!important;font-size:15px!important;background:#fff!important;color:#203451!important;border:1.5px solid #a9bfdf!important;border-radius:11px!important;box-shadow:inset 0 1px 3px rgba(25,50,90,.05)!important;outline:none!important}
+#prosenjit-access-lock #prosenjit-lock-form .student-field::placeholder{color:#71809a!important}
+#prosenjit-access-lock #prosenjit-lock-form select.student-field:invalid{color:#71809a!important}
+#prosenjit-access-lock #prosenjit-lock-form .student-field:focus{border-color:#4b79c6!important;box-shadow:0 0 0 3px rgba(75,121,198,.18)!important}
+#prosenjit-access-lock #prosenjit-lock-form #prosenjit-lock-password{padding:12px 14px!important}
+#prosenjit-access-lock #prosenjit-lock-form .student-honeypot{display:none!important}
+@media(max-width:420px){#prosenjit-access-lock #prosenjit-lock-form .student-row{grid-template-columns:1fr}}
+</style>
 </body>
 
 <style id="playlist-private-access-note">
